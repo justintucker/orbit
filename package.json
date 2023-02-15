@@ -1,0 +1,25 @@
+{
+  "name": "orbit",
+  "version": "1.0.0",
+  "description": "A micro-framework for building niche sites with Astro",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justintucker/orbit.git"
+  },
+  "author": "justintucker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justintucker/orbit/issues"
+  },
+  "homepage": "https://github.com/justintucker/orbit#readme",
+  "dependencies": {
+    "astro": "^2.0.12"
+  }
+}
