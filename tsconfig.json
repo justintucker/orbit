@@ -6,6 +6,7 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"]
     },
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
