@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { Debug } from "astro/components";
 
@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-console.log(entry);
+// console.log(entry);
 
 const { Content } = await entry.render();
 ---
