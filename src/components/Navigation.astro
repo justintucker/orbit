@@ -1,0 +1,28 @@
+---
+const pathname = Astro.url.pathname;
+const current = pathname.length > 1 ? pathname.slice(1) : " ";
+---
+
+<nav>
+  <a class={current === " " ? "selected" : ""} href="/">Home</a>
+  <a class={current === "about" ? "selected" : ""} href="/about">About</a>
+  <a class={current === "blog" ? "selected" : ""} href="/blog">Blog</a>
+</nav>
+
+<style>
+  nav {
+    width: 100%;
+    text-align: right;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  a:hover,
+  .selected {
+    text-decoration: underline;
+  }
+</style>
