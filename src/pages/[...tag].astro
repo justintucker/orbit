@@ -21,7 +21,7 @@ export async function getStaticPaths() {
   });
 }
 
-const { tag = "default", description, permalink } = Astro.params;
+const { tag = "default" } = Astro.params;
 const { posts } = Astro.props;
 ---
 

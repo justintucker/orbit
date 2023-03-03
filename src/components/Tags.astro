@@ -1,0 +1,24 @@
+---
+interface Props {
+  tagData: Array<string>;
+}
+
+const { tagData } = Astro.props;
+const { origin } = Astro.url;
+const hasTagData = tagData?.length > 0;
+---
+
+{
+  hasTagData &&
+    tagData.map((tag: string) => (
+      <span>
+        <a href={`${origin}/${tag}`}>{tag}</a>
+      </span>
+    ))
+}
+
+<style>
+  a {
+    text-transform: capitalize;
+  }
+</style>
