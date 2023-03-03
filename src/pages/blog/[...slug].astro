@@ -12,11 +12,13 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const { tags, title, description } = entry.data;
 const { Content } = await entry.render();
+const permalink = `${Astro.url.href}${entry.slug}`;
 ---
 
-<Layout title={entry.data.title} description="" permalink="">
-  <h1>{entry.data.title}</h1>
+<Layout title={title} description={description} permalink={permalink}>
+  <h1>{title}</h1>
   <Content />
-  <Tags tagData={entry.data.tags} />
+  <Tags tagData={tags} />
 </Layout>

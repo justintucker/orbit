@@ -1,8 +1,10 @@
 ---
 import Layout from "@layouts/Layout.astro";
-const pageTitle = "About me";
+const title = "About Us";
+const permalink = Astro.url.href;
+const description = "About us description";
 ---
 
-<Layout title={pageTitle} description="" permalink="">
+<Layout title={title} description={description} permalink={permalink}>
   <p>About page</p>
 </Layout>

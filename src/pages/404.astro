@@ -1,7 +1,11 @@
 ---
 import Layout from "@layouts/Layout.astro";
+
+const title = "404";
+const description = "404 page description";
+const permalink = Astro.url.href;
 ---
 
-<Layout title="404" description="" permalink="">
+<Layout title={title} description={description} permalink={permalink}>
   <p>404 Message here</p>
 </Layout>

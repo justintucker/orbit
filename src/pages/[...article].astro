@@ -18,9 +18,10 @@ interface Props {
 const { entry } = Astro.props;
 const { title, description, tags = [] } = entry?.data;
 const { Content } = await entry.render();
+const permalink = `${Astro.url.href}${entry.slug}`;
 ---
 
-<Layout title={title} description={description} permalink="">
+<Layout title={title} description={description} permalink={permalink}>
   <h1>{title}</h1>
   <Content />
   <Tags tagData={tags} />

@@ -23,9 +23,11 @@ export async function getStaticPaths() {
 
 const { tag = "default" } = Astro.params;
 const { posts } = Astro.props;
+const permalink = Astro.url.href;
+const description = `All posts under ${tag}.`;
 ---
 
-<Layout title={tag} description="" permalink="">
+<Layout title={tag} description={description} permalink={permalink}>
   <p>Posts tagged with <em>{tag}</em></p>
   <ul>
     {

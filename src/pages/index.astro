@@ -1,12 +1,14 @@
 ---
 import Layout from "@layouts/Layout.astro";
-const pageTitle = "Home";
-
 import { getCollection } from "astro:content";
+
+const title = "Home";
+const description = "Home page description";
+const permalink = Astro.url.href;
 const articleEntries = await getCollection("articles");
 ---
 
-<Layout title={pageTitle} description="" permalink="">
+<Layout title={title} description={description} permalink={permalink}>
   <p>Home Page</p>
   <ul>
     {
