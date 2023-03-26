@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/justintucker/orbit#readme",
   "dependencies": {
-    "@astrojs/sitemap": "^1.0.1",
-    "astro": "^2.0.12",
-    "astro-compress": "^1.1.33"
+    "@astrojs/sitemap": "^1.2.1",
+    "astro": "^2.1.5",
+    "astro-compress": "^1.1.35"
   }
 }
